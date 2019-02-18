@@ -29,8 +29,9 @@ if p < r
 A useful way to keep track of the recursion is via a tree
 When tracking through it, remember that it goes towards the left first logically down the tree until it reaches 1 element then it goes back up to the right element. At the end it merges.
 
-![Image of mergesort](https://i.imgur.com/H23uuMx.png)
+c
 
 #### T(n)
 The time or efficiency to process n elements of mergesort
 
+![Image of insertion sorts](https://imgur.com/IiVWtMU)
