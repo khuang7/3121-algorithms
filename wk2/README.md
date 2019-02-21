@@ -60,4 +60,11 @@ Basically the same equation as above but the inequality is swapped
 
 No matter what input of size n, the runnign time on that input is at least a constant x g(n)
 
-## Mergesort Complexity
+#### The reason for the constants
+Different computers run algorithms in different ways. Some may require more steps to complete, so therefore the c is there to account for these situations
+
+The n greater than a certain number is required in examples of cases where computers are required to load in memory. There are these starting cases, so therefore it is better to just consider larger N (?)
+
+
+## Master Theorem
+
