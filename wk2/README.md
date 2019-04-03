@@ -62,9 +62,15 @@ Basically the same equation as above but the inequality is swapped
 
 No matter what input of size n, the running time on that input is at least a constant x g(n)
 
+<<<<<<<
 ## Mergesort Complexity aka recurrence
 T(n) <= 2T(n/2) + cn
+=======
+#### The reason for the constants
+Different computers run algorithms in different ways. Some may require more steps to complete, so therefore the c is there to account for these situations
+>>>>>>>
 
+<<<<<<<
 also the *DEPTH OF THE TREE?
 
 If we consider each level of the recursion
@@ -105,3 +111,12 @@ Splitting into 2 (a) subproblems. and each time we split the list in 1/2 (1/b)
 
 need to explore this in more detail!!
 
+
+=======
+The n greater than a certain number is required in examples of cases where computers are required to load in memory. There are these starting cases, so therefore it is better to just consider larger N (?)
+
+
+## Master Theorem
+
+
+>>>>>>>
