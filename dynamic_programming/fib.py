@@ -31,14 +31,12 @@ def fib_bottoms_up(n):
     O(n) TIME
     '''
     for k in range(1,n + 1):
-        print(k)
         if k <= 2:
             f = 1
         else:
-
             f = memo[k-1] + memo[k-2]
         memo[k] = f
-        print(memo)
     return memo[n]
+
 
 main()
