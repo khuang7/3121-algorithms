@@ -1,9 +1,9 @@
 
 '''
 Initialized global variables
-
+https://stackoverflow.com/questions/2631726/how-to-determine-the-longest-increasing-subsequence-using-dynamic-programming
 '''
-arr = [3, 7, 4, 9, 10 ,12, 2, 3, 1]
+arr = [3, 10, 15, 2, 4, 6, 20, 19, 51]
 DP = []
 prev = []
 DP.append(1)
@@ -12,8 +12,7 @@ maxLength = 1
 bestEnd = 0
 
 def main():
-    print(recursive_solution(arr))
-
+    my_attempt(arr)
 
 def longest_subsequence_naive(arr, n):
     '''
@@ -64,10 +63,30 @@ def recursive_solution(arr, bigger_than=None):
     return best_sequence
 
 
-def DP_LIS():
-    '''
-    The O(n^2) solution
-    '''
-    pass
+
+
+max_sub_length = 0
+mem = []
+sub = []
+def my_attempt(arr):
+    global max_sub_length
+    global mem
+
+    for i in range(0,len(arr)):
+        if i == 0:
+            max_sub_length = 1
+            mem.insert(i, 1)
+            sub.insert(i, arr[i])
+
+        elif arr[i] > arr[i-1]:
+            mem.insert(i, mem[i-1] + 1)
+            max_sub_length = max_sub_length + 1
+
+
+
+
+        elif arr[i] < arr[i-1]:
+            mem.insert(i, mem[i-1])
+    print(sub)
 
 main()
