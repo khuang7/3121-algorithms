@@ -25,7 +25,6 @@ def max_value2(c):
     DP = [[0 for i in range(c + 1)] for j in range(len(v))]
 
     print(DP)
-
     for i in range(len(v)):
         for j in range(c + 1):
             if i == 0 or j == 0:

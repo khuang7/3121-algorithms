@@ -81,10 +81,6 @@ def my_attempt(arr):
         elif arr[i] > arr[i-1]:
             mem.insert(i, mem[i-1] + 1)
             max_sub_length = max_sub_length + 1
-
-
-
-
         elif arr[i] < arr[i-1]:
             mem.insert(i, mem[i-1])
     print(sub)

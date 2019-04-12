@@ -38,5 +38,4 @@ def fib_bottoms_up(n):
         memo[k] = f
     return memo[n]
 
-
 main()
