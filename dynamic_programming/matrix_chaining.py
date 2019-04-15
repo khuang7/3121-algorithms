@@ -52,4 +52,8 @@ def matrix_chaining(m):
     #print(dp)
     return dp[0][len(m)-1]
 
+
+
+
+
 main()

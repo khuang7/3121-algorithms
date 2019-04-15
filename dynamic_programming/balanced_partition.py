@@ -39,16 +39,7 @@ def max_value2(c, v):
                 used[i][j] = False
                 came_from[i][j] = (i-1, j)
 
-    result = []
-    cur_grid = (len(w) - 1, c)
-    while cur_grid != (-1, -1):
-        if used[cur_grid[0]][cur_grid[1]]:
-            result.append(v[cur_grid[0]])
-        cur_grid = came_from[cur_grid[0]][cur_grid[1]]
 
-    print(used)
-    print(came_from)
-    print(DP)
     return result
 
 main()
